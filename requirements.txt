@@ -1,0 +1,7 @@
+--extra-index-url https://download.pytorch.org/whl/cu113
+torch==1.12.1
+torchvision==0.13.1
+transformers==4.26.1
+datasets==2.9.0
+diffusers==0.12.1
+numpy==1.26.4

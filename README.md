@@ -5,25 +5,18 @@
 
 
 ## 运行环境
-
 ```python
-conda install pytorch==1.12.1 torchvision==0.13.1 cudatoolkit=11.3 -c pytorch numpy==1.26.4
+pip3 install -r requirement.txt
+```
+如果用pip安装过慢，用conda安装
+```python
+conda install pytorch==1.12.1 torchvision==0.13.1 cudatoolkit=11.3 -c pytorch 
 ```
 
-运行环境:
-<br>
-python==3.9
-<br>
-pytorch==1.12.1+cu113
-<br>
-transformers==4.26.1
-<br>
-datasets==2.9.0
-<br>
-diffusers==0.12.1
-
-<br>
-
+拉取子仓
+```bash
+git clone --recurse-submodules git@github.com:LufanM/Diffusion_From_Scratch.git
+```
 
 
 ## DDPM
@@ -49,3 +42,6 @@ diffusers==0.12.1
 
 ![](/home/molufan/.config/Typora/typora-user-images/image-20260302122229323.png)
 
+
+
+## Flow Matching 
