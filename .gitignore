@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Checkpoints & model weights
+checkpoints/
+flowmatch_checkpoints/
+*.pt
+*.pth
+*.ckpt
+
+# Data
+data/
+flow_matching/faces/
+flow_matching/flowmatch_checkpoints/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db

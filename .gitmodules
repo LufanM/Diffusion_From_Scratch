@@ -1,0 +1,3 @@
+[submodule "flow_matching/rectified-flow"]
+	path = flow_matching/rectified-flow
+	url = https://github.com/TongTong313/rectified-flow.git
