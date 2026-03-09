@@ -1,25 +1,33 @@
 # 简介
 
-本项目用于从0构建diffusion model，包含两部分，DDPM(位于[diffusion_model文件](./diffusion_model)下)，stable diffusion model（项目主目录）
+本项目用于从0构建diffusion model，包含三部分，DDPM(位于[diffusion_model文件](./diffusion_model)下)，stable diffusion model（stable_diffusion_model文件夹下），flow matching（flow_matching文件夹下）
 
 
 
 ## 运行环境
-```python
+创建几乎纯净的conda环境
+```bash
+conda create -n ddpm_study python=3.9.23 -y
+```
+
+```bash
 pip3 install -r requirement.txt
 ```
 如果用pip安装过慢，用conda安装
-```python
+```bash
 conda install pytorch==1.12.1 torchvision==0.13.1 cudatoolkit=11.3 -c pytorch 
 ```
 
 拉取子仓
 ```bash
-git clone --recurse-submodules git@github.com:LufanM/Diffusion_From_Scratch.git
+git submodule update --init --recursive
 ```
 
 
+
 ## DDPM
+
+![image-20260306194124690](./README.assets/image-20260306194124690.png)
 
 * 根据数学原理的推导代码在[diffusion_sample.py](./diffusion_model/diffusion_sample.py)中
 * 然后为了学习训练过程，调整了diffusion_sample.py 为diffusion_image.py，为了方便图像处理，还加入了如下几个模块
@@ -40,7 +48,9 @@ git clone --recurse-submodules git@github.com:LufanM/Diffusion_From_Scratch.git
 
 主要逻辑图如下：
 
-![](/home/molufan/.config/Typora/typora-user-images/image-20260302122229323.png)
+![image-20260306194253002](./README.assets/image-20260306194253002.png)
+
+
 
 
 
